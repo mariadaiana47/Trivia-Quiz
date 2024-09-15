@@ -414,7 +414,7 @@ function startQuiz(questions, quizTitle, backgroundImage) {
         <div id="answer-buttons" class="btn-container"></div>
       </div>
       <div id="timer">
-        <p>Time left: <span id="time-left">10</span></p>
+        <p>Time left: <span id="time-left">15</span></p>
       </div>
       <button id="next-btn" class="btn hidden">Next Question</button>
       <div id="score-display" class="hidden">
@@ -429,7 +429,7 @@ function startQuiz(questions, quizTitle, backgroundImage) {
 
   let currentQuestionIndex = 0;
   let score = 0;
-  let timeLeft = 10;
+  let timeLeft = 15;
   let timerInterval;
   const totalQuestions = questions.length;
   const questionElement = document.getElementById('question');
@@ -455,7 +455,7 @@ function startQuiz(questions, quizTitle, backgroundImage) {
       answerButtonsElement.appendChild(button);
     });
 
-    timeLeft = 10;
+    timeLeft = 15;
     timeLeftElement.innerText = timeLeft;
     clearInterval(timerInterval);
     timerInterval = setInterval(updateTimer, 1000);
