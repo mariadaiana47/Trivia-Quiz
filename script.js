@@ -95,7 +95,7 @@ const medicalQuestions = [
       { text: "Humerus", correct: false },
       { text: "Trapezius", correct: false },
       { text: "Quadriceps", correct: false },
-      { text: "Soleus", correct: true }
+      { text: "Gluteus maximus", correct: true }
     ]
   }
 ];
@@ -113,8 +113,8 @@ const geographyQuestions = [
   {
     question: "Which is the longest river in the world?",
     answers: [
-      { text: "Amazon", correct: true },
-      { text: "Nile", correct: false },
+      { text: "Amazon", correct: false },
+      { text: "Nile", correct: true },
       { text: "Yangtze", correct: false },
       { text: "Mississippi", correct: false }
     ]
